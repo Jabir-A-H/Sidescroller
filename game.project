@@ -1,5 +1,6 @@
 [project]
-title = Side scroller tutorial
+title = Sidescroller
+publisher = Team J
 
 [bootstrap]
 main_collection = /main/main.collectionc

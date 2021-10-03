@@ -1,4 +1,4 @@
-local speed = -350
+local speed = -150
 local score = 50
 
 function update(self, dt)
@@ -13,6 +13,7 @@ end
 function on_message(self, message_id, message, sender)
 	if message_id == hash("collision_response") then
 		msg.post("main#gui", "add_score", {amount = score})
+		particlefx.play("#pickup")
 		go.delete()
 	end
 end

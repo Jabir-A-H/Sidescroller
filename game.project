@@ -1,6 +1,7 @@
 [project]
 title = Sidescroller
 publisher = Team J
+version = 0.2
 
 [bootstrap]
 main_collection = /main/main.collectionc
@@ -18,4 +19,11 @@ scale = 0.02
 
 [script]
 shared_state = 1
+
+[windows]
+app_icon = /stars/rocks_icon.ico
+
+[android]
+package = com.teamj.sidescroller
+app_icon_48x48 = /stars/rocks_00.png
 

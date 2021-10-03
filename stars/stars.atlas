@@ -156,6 +156,85 @@ animations {
   flip_horizontal: 0
   flip_vertical: 0
 }
+animations {
+  id: "rocks"
+  images {
+    image: "/stars/rocks_00.png"
+  }
+  images {
+    image: "/stars/rocks_01.png"
+  }
+  images {
+    image: "/stars/rocks_02.png"
+  }
+  images {
+    image: "/stars/rocks_03.png"
+  }
+  images {
+    image: "/stars/rocks_04.png"
+  }
+  images {
+    image: "/stars/rocks_05.png"
+  }
+  images {
+    image: "/stars/rocks_06.png"
+  }
+  images {
+    image: "/stars/rocks_07.png"
+  }
+  images {
+    image: "/stars/rocks_08.png"
+  }
+  images {
+    image: "/stars/rocks_09.png"
+  }
+  images {
+    image: "/stars/rocks_10.png"
+  }
+  images {
+    image: "/stars/rocks_11.png"
+  }
+  images {
+    image: "/stars/rocks_12.png"
+  }
+  images {
+    image: "/stars/rocks_13.png"
+  }
+  images {
+    image: "/stars/rocks_14.png"
+  }
+  images {
+    image: "/stars/rocks_15.png"
+  }
+  images {
+    image: "/stars/rocks_16.png"
+  }
+  images {
+    image: "/stars/rocks_17.png"
+  }
+  images {
+    image: "/stars/rocks_18.png"
+  }
+  images {
+    image: "/stars/rocks_19.png"
+  }
+  images {
+    image: "/stars/rocks_20.png"
+  }
+  images {
+    image: "/stars/rocks_21.png"
+  }
+  images {
+    image: "/stars/rocks_22.png"
+  }
+  images {
+    image: "/stars/rocks_23.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 30
+  flip_horizontal: 0
+  flip_vertical: 0
+}
 margin: 0
 extrude_borders: 0
 inner_padding: 0

@@ -17,6 +17,9 @@ function update(self, dt)
 		p.y = vmath.lerp(math.random(), min_y, max_y)
 		local component = "#star_factory"
 		if math.random() < bonus_prob then
+			component = "#rocks_factory"
+		end
+		if math.random() < bonus_prob then
 			component = "#bonus_factory"
 		end
 		factory.create(component, p)

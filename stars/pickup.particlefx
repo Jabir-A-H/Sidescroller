@@ -5,7 +5,7 @@ emitters {
   space: EMISSION_SPACE_EMITTER
   position {
     x: 0.0
-    y: 0.0
+    y: -3.0
     z: 0.0
   }
   rotation {
@@ -37,7 +37,7 @@ emitters {
     key: EMITTER_KEY_SIZE_X
     points {
       x: 0.0
-      y: 32.0
+      y: 55.467
       t_x: 1.0
       t_y: 0.0
     }
@@ -47,7 +47,7 @@ emitters {
     key: EMITTER_KEY_SIZE_Y
     points {
       x: 0.0
-      y: 2.0
+      y: 3.215
       t_x: 1.0
       t_y: 0.0
     }

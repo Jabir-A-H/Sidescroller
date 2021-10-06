@@ -1,7 +1,7 @@
 [project]
 title = Sidescroller
 publisher = Team J
-version = 0.2
+version = 0.13alpha
 
 [bootstrap]
 main_collection = /main/main.collectionc

@@ -7,7 +7,7 @@ local max_x = 1220
 function init(self)
 	-- Let the script receive input from the player
 	msg.post(".", "acquire_input_focus")
---	self.velocity=vmath.vector3()
+	self.velocity=vmath.vector3()
 	self.input=vmath.vector3()
 	-- the current speed of the space ship
 	self.speed = 0
@@ -47,57 +47,57 @@ function update(self, dt)
 --	go.set_position(o)
 --	self.speed = 0
 --	---------------
---	if vmath.length_sqr(self.input) > 1 then
---		self.input=vmath.normalize(self.input)
---	end
+	if vmath.length_sqr(self.input) > 1 then
+		self.input=vmath.normalize(self.input)
+	end
 	
---	local acceleration=self.input*350
---	
---	local dv=acceleration*dt
---	local v0=self.velocity
---	local v1=self.velocity+dv
---	local movement=(v0+v1)*dt*0.5
---	
---	local p=go.get_position()
---	-------------
---	local total_movement=p+movement
---	--	movement.y = movement.y + self.speed * dt
---	if total_movement.y < min_y then
---		total_movement.y = min_y
---	elseif total_movement.y > max_y then
---		total_movement.y = max_y
---	end
+	local acceleration=self.input*350
+	
+	local dv=acceleration*dt
+	local v0=self.velocity
+	local v1=self.velocity+dv
+	local movement=(v0+v1)*dt*0.5
+	
+	local p=go.get_position()
+	-------------
+	local total_movement=p+movement
+	--	movement.y = movement.y + self.speed * dt
+	if total_movement.y < min_y then
+		total_movement.y = min_y
+	elseif total_movement.y > max_y then
+		total_movement.y = max_y
+	end
 --	--go.set_position(p)
 --	--self.speed = 0
 --	local movement = go.get_position()
 --	movement.x = movement.x + self.speed * dt
---	if total_movement.x < min_x then
---		total_movement.x = min_x
---	elseif total_movement.x > max_x then
---		total_movement.x = max_x
---	end
---	--------------
---	go.set_position(total_movement)
+	if total_movement.x < min_x then
+		total_movement.x = min_x
+	elseif total_movement.x > max_x then
+		total_movement.x = max_x
+	end
+	--------------
+	go.set_position(total_movement)
 --	if total_movement.y == min_y or total_movement.y == max_y and total_movement.x == min_x or total_movement.x == min_x then
-		local amovement = self.input * 350 * dt
-		local o = go.get_position()
-		
-		local fixed_movement = amovement+o
-		
+--		local amovement = self.input * 350 * dt
+--		local o = go.get_position()
+--		
+--		local fixed_movement = amovement+o
+--		
 --		go.set_position(o + fixed_movement)
-		if fixed_movement.y < min_y then
-			fixed_movement.y = min_y
-		elseif fixed_movement.y > max_y then
-			fixed_movement.y = max_y
-		end
-		if fixed_movement.x < min_x then
-			fixed_movement.x = min_x
-		elseif fixed_movement.x > max_x then
-			fixed_movement.x = max_x
-		end
+--		if fixed_movement.y < min_y then
+--			fixed_movement.y = min_y
+--		elseif fixed_movement.y > max_y then
+--			fixed_movement.y = max_y
+--		end
+--		if fixed_movement.x < min_x then
+--			fixed_movement.x = min_x
+--		elseif fixed_movement.x > max_x then
+--			fixed_movement.x = max_x
+--		end
 --	else go.set_position(total_movement)
 --	end
-	go.set_position(fixed_movement)
+--	go.set_position(fixed_movement)
 	self.velocity=v1
 	self.input=vmath.vector3()
 end
